@@ -223,7 +223,7 @@
 		B02FD52A18C520D60009ECA9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Ariel Elkin";
 				TargetAttributes = {
 					B02FD54C18C520D70009ECA9 = {
@@ -360,6 +360,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -425,6 +426,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "iOS Demo/iOS Demo-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "stk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -443,6 +445,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "iOS Demo/iOS Demo-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "stk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,6 +467,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "iOS DemoTests/iOS DemoTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "stk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -482,6 +486,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS Demo/iOS Demo-Prefix.pch";
 				INFOPLIST_FILE = "iOS DemoTests/iOS DemoTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "stk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

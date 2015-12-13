@@ -10,6 +10,7 @@
 #import "SineWave.h"
 #import "Brass.h"
 #import "Mandolin.h"
+#import "RtMidi.h"
 
 @implementation ViewController {
     stk::SineWave *sineWave;
@@ -24,6 +25,23 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+
+    RtMidiIn *midiin = new RtMidiIn();
+
+    unsigned int nPorts = midiin->getPortCount();
+    std::cout << "\nThere are " << nPorts << " MIDI input sources available.\n";
+    std::string portName;
+    unsigned int i;
+    for ( i=0; i<nPorts; i++ ) {
+        try {
+            portName = midiin->getPortName(i);
+        }
+        catch ( RtMidiError &error ) {
+            error.printMessage();
+        }
+        std::cout << "  Input Port #" << i+1 << ": " << portName << '\n';
+    }
+
     
     NSUInteger samplesToGenerate = 1000;
     

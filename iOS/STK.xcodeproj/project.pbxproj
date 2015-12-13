@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B02B21B91C1DC9CF00C59B12 /* RtMidi.h in Headers */ = {isa = PBXBuildFile; fileRef = B02B21B81C1DC9CF00C59B12 /* RtMidi.h */; };
+		B02B21BB1C1DC9DA00C59B12 /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B02B21BA1C1DC9DA00C59B12 /* RtMidi.cpp */; };
 		B0AC5BF218CB330100D860C0 /* ADSR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08F612618BA9B1800C14A90 /* ADSR.cpp */; };
 		B0AC5BF318CB330100D860C0 /* Asymp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08F612718BA9B1800C14A90 /* Asymp.cpp */; };
 		B0AC5BF418CB330100D860C0 /* Blit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08F612B18BA9B1800C14A90 /* Blit.cpp */; };
@@ -128,6 +130,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B02B21B81C1DC9CF00C59B12 /* RtMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RtMidi.h; path = ../include/RtMidi.h; sourceTree = "<group>"; };
+		B02B21BA1C1DC9DA00C59B12 /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RtMidi.cpp; path = ../src/RtMidi.cpp; sourceTree = "<group>"; };
 		B08F608F18BA9B1800C14A90 /* ADSR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ADSR.h; path = ../include/ADSR.h; sourceTree = "<group>"; };
 		B08F609018BA9B1800C14A90 /* Asymp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Asymp.h; path = ../include/Asymp.h; sourceTree = "<group>"; };
 		B08F609118BA9B1800C14A90 /* BandedWG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BandedWG.h; sourceTree = "<group>"; };
@@ -386,6 +390,8 @@
 		B08F608718BA9B0600C14A90 = {
 			isa = PBXGroup;
 			children = (
+				B02B21B81C1DC9CF00C59B12 /* RtMidi.h */,
+				B02B21BA1C1DC9DA00C59B12 /* RtMidi.cpp */,
 				B08F619018BA9E1C00C14A90 /* Generators */,
 				B08F608E18BA9B1800C14A90 /* Instruments */,
 				E81E86DA18BBDA1200289223 /* Effects */,
@@ -680,6 +686,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02B21B91C1DC9CF00C59B12 /* RtMidi.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,6 +883,7 @@
 				B0AC5C3918CB330100D860C0 /* FileRead.cpp in Sources */,
 				B0AC5C3A18CB330100D860C0 /* FileWrite.cpp in Sources */,
 				B0AC5C3B18CB330100D860C0 /* FileWvIn.cpp in Sources */,
+				B02B21BB1C1DC9DA00C59B12 /* RtMidi.cpp in Sources */,
 				B0AC5C3C18CB330100D860C0 /* FileLoop.cpp in Sources */,
 				B0AC5C3D18CB330100D860C0 /* FileWvOut.cpp in Sources */,
 				B0AC5C3E18CB330100D860C0 /* Skini.cpp in Sources */,
